@@ -34,6 +34,32 @@
 	padding: 8px;
 }
 
+.dashboard .main-row .environment,
+.dashboard .main-row .aqi {
+	display: flex;
+	flex-direction: column;
+	gap: 12px;
+}
+
+.dashboard .main-row .environment .cards {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	gap: 12px;
+	height: 100%;
+}
+
+.dashboard .main-row .aqi .content .gauge {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+}
+
+.dashboard .main-row .aqi .foot-note {
+	width: fit-content;
+	margin: auto;
+}
+
 .dashboard .secondary-row {
 	grid-template-columns: 2fr 1fr 2fr;
 }
@@ -44,4 +70,48 @@
 	background-color: #202020;
 	height: 300px;
 	width: 100%;
+}
+
+/* Card Component */
+.card {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	gap: 12px;
+	border: 1px solid #404040;
+	height: 100%;
+	border-radius: 12px;
+	padding: 12px;
+	text-align: center;
+	cursor: pointer;
+	transition: all 0.3s ease;
+}
+
+.card:hover {
+	border: 1px solid #9f9f9f;
+}
+
+.card svg {
+	height: 54px;
+	width: 54px;
+}
+
+.card .card-content {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.card .card-content .card-values {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+@media screen and (max-width: 980px) {
+	.dashboard .main-row {
+		display: flex;
+		flex-direction: column-reverse;
+	}
 }

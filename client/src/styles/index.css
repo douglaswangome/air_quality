@@ -12,6 +12,7 @@
 	background-color: #101010;
 	color: #fff;
 	font-family: "Nunito", sans-serif;
+	font-size: 16px;
 
 	/* Colors */
 	--background: #202020;
@@ -22,6 +23,18 @@ span.underline {
 	font-weight: 700;
 	text-decoration: underline;
 	text-underline-offset: 6px;
+	text-transform: capitalize;
+}
+span.value {
+	font-size: 36px;
+	font-weight: 700;
+}
+span.unit {
+	font-size: 18px;
+}
+span.category {
+	color: #9f9f9f;
+	font-size: 18px;
 	text-transform: capitalize;
 }
 
