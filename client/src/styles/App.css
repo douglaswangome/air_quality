@@ -1,0 +1,47 @@
+.header {
+	height: 70px;
+	margin-bottom: 12px;
+}
+
+.dashboard {
+	display: flex;
+	flex-direction: column;
+	gap: 12px;
+	padding: 12px;
+}
+
+.dashboard .map {
+	background-color: #202020;
+	height: 300px;
+	width: 100%;
+}
+
+.dashboard .row {
+	display: grid;
+	gap: 12px;
+}
+
+.dashboard .main-row {
+	grid-template-columns: 3fr 2fr;
+}
+
+.dashboard .main-row .environment,
+.dashboard .main-row .aqi {
+	background-color: #202020;
+	border-radius: 12px;
+	height: 300px;
+	width: 100%;
+	padding: 8px;
+}
+
+.dashboard .secondary-row {
+	grid-template-columns: 2fr 1fr 2fr;
+}
+
+.dashboard .secondary-row .chart,
+.dashboard .secondary-row .tips,
+.dashboard .secondary-row .locations {
+	background-color: #202020;
+	height: 300px;
+	width: 100%;
+}

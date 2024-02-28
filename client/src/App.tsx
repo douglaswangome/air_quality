@@ -1,3 +1,4 @@
+import "./styles/App.css";
 import { FC, Suspense } from "react";
 // React Router
 // A library for routing in React
