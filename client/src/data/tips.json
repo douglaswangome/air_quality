@@ -1,0 +1,74 @@
+{
+	"tips": {
+		"good": [
+			{
+				"title": "Enjoy Outdoor Activities",
+				"description": "The air quality is good, so advantage of this by spending time outdoors. Engage in outdoor exercises like running, cycling, or hiking."
+			},
+			{
+				"title": "Keep Windows Open",
+				"description": "Open windows and let fresh air circulate throughout your home or workplace to improve indoor air quality."
+			},
+			{
+				"title": "Stay Informed",
+				"description": "Even though the air quality is good now, stay informed about any changes in air quality that might occur throughout the day."
+			}
+		],
+		"moderate": [
+			{
+				"title": "Limit Outdoor Activities",
+				"description": "While the air quality is not harmful, sensitive individuals should limit prolonged outdoor activities, especially if they experience any symptoms like coughing or shortness of breath."
+			},
+			{
+				"title": "Check Air Quality Forecasts",
+				"description": "Stay updated on air quality forecasts and plan outdoor activities accordingly, especially if you're in a sensitive group."
+			},
+			{
+				"title": "Consider Using Air Purifiers",
+				"description": "Consider using air purifiers indoors to further improve air quality, especially if you have respiratory issues."
+			}
+		],
+		"unhealthy for sensitive groups": [
+			{
+				"title": "Reduce Outdoor Activities",
+				"description": "Individuals with respiratory or heart conditions, children, and older adults should reduce prolonged or heavy outdoor exertion to minimize exposure to pollutants."
+			},
+			{
+				"title": "Use Masks",
+				"description": "Consider using masks rated for particulate matter (such as N95 masks) if you need to spend extended periods outdoors, especially during physical activities."
+			},
+			{
+				"title": "Keep Medications Handy",
+				"description": "If you have asthma or other respiratory conditions, ensure you have your medications readily available and follow your doctor's advice."
+			}
+		],
+		"unhealthy": [
+			{
+				"title": "Stay Indoors",
+				"description": "Everyone, especially sensitive groups, should avoid outdoor activities and stay indoors as much as possible to reduce exposure to pollutants."
+			},
+			{
+				"title": "Use Air Filters",
+				"description": "Use high-efficiency air filters in air conditioning systems and consider running air purifiers indoors to reduce indoor air pollution."
+			},
+			{
+				"title": "Keep Hydrated",
+				"description": "Drink plenty of water to stay hydrated, as this can help reduce the effects of exposure to pollutants on your respiratory system."
+			}
+		],
+		"hazardous": [
+			{
+				"title": "Remain Indoors",
+				"description": "It's crucial to stay indoors and avoid all outdoor activities due to extremely poor air quality."
+			},
+			{
+				"title": "Seal Windows and Doors",
+				"description": "Keep windows and doors tightly closed to prevent outdoor air from entering your home or workplace."
+			},
+			{
+				"title": "Create Clean Air Spaces",
+				"description": "If possible, create a clean air space within your home using air purifiers with HEPA filters to provide a refuge from outdoor pollutants. Consider using a DIY air purifier with a box fan and a HEPA filter if commercial options are unavailable."
+			}
+		]
+	}
+}

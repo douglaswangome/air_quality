@@ -10,6 +10,12 @@ import {
 	BsThermometerHalf,
 } from "react-icons/bs";
 import GaugeComponent from "react-gauge-component";
+import Graph from "../components/Graph";
+import List from "../components/List";
+
+// Data
+import { tips } from "../data/tips.json";
+import { towns } from "../data/towns.json";
 
 const Dashboard: FC = () => {
 	return (
@@ -71,7 +77,7 @@ const Dashboard: FC = () => {
 										],
 									}}
 									pointer={{ type: "blob", animationDelay: 0 }}
-									value={43}
+									value={49}
 									minValue={0}
 									maxValue={300}
 								/>
@@ -84,9 +90,18 @@ const Dashboard: FC = () => {
 					</div>
 				</div>
 				<div className="row secondary-row">
-					<div className="chart">chart</div>
-					<div className="tips">health tips</div>
-					<div className="locations">locations</div>
+					<div className="chart">
+						<span className="underline">Today's AQI</span>
+						<Graph />
+					</div>
+					<div className="locations">
+						<span className="underline">Locations</span>
+						<List list={towns} />
+					</div>
+					<div className="tips">
+						<span className="underline">Health Tip</span>
+						<List list={tips.good} />
+					</div>
 				</div>
 			</div>
 		</>

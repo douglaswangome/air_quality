@@ -1,6 +1,5 @@
 import { FC, useRef } from "react";
 import { CircleMarker, MapContainer, TileLayer, Tooltip } from "react-leaflet";
-import "leaflet/dist/leaflet.css";
 
 const Map: FC = () => {
 	const mapRef = useRef(null);

@@ -67,9 +67,18 @@
 .dashboard .secondary-row .chart,
 .dashboard .secondary-row .tips,
 .dashboard .secondary-row .locations {
+	display: flex;
+	flex-direction: column;
+	gap: 6px;
 	background-color: #202020;
+	border-radius: 12px;
 	height: 300px;
 	width: 100%;
+	padding: 8px;
+}
+
+.dashboard .secondary-row .chart .graph {
+	height: 100%;
 }
 
 /* Card Component */
@@ -107,6 +116,26 @@
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+}
+
+/* List Component */
+.list {
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+}
+
+.list .list-item.town {
+	display: flex;
+	justify-content: space-between;
+	padding: 4px;
+	border-bottom: 1px solid #404040;
+	cursor: default;
+	transition: all 0.3s ease;
+}
+
+.list .list-item.town:hover {
+	border-bottom: 1px solid #9f9f9f;
 }
 
 @media screen and (max-width: 980px) {

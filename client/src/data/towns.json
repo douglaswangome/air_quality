@@ -1,0 +1,9 @@
+{
+	"towns": [
+		{ "name": "Juja Market", "aqi": 57 },
+		{ "name": "Juja Hospital", "aqi": 43 },
+		{ "name": "Juja Stage", "aqi": 89 },
+		{ "name": "Juja Police Station", "aqi": 67 },
+		{ "name": "Juja Post Office", "aqi": 78 }
+	]
+}
