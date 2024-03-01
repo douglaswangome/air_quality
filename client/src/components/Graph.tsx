@@ -36,8 +36,10 @@ const Graph: FC = () => {
 	return (
 		<div className="graph">
 			<LineChart
+				axisHighlight={{ x: "line", y: "line" }}
 				series={[{ data: aqi, label: "aqi" }]}
 				xAxis={[{ scaleType: "point", data: xLabels }]}
+				yAxis={[{ scaleType: "linear" }]}
 			/>
 		</div>
 	);

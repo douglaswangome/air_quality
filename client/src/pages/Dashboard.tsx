@@ -9,7 +9,7 @@ import {
 	BsSpeedometer2,
 	BsThermometerHalf,
 } from "react-icons/bs";
-import GaugeComponent from "react-gauge-component";
+import Gauge from "../components/Gauge";
 import Graph from "../components/Graph";
 import List from "../components/List";
 
@@ -56,32 +56,7 @@ const Dashboard: FC = () => {
 					<div className="aqi">
 						<span className="underline">air quality index</span>
 						<div className="content">
-							<div className="gauge">
-								<GaugeComponent
-									type="semicircle"
-									arc={{
-										colorArray: [
-											"#00FF15",
-											"#FFFF15",
-											"#FF2121",
-											"#9933FF",
-											"#8B01FF",
-										],
-										padding: 0.02,
-										subArcs: [
-											{ limit: 50 },
-											{ limit: 100 },
-											{ limit: 150 },
-											{ limit: 200 },
-											{ limit: 300 },
-										],
-									}}
-									pointer={{ type: "blob", animationDelay: 0 }}
-									value={49}
-									minValue={0}
-									maxValue={300}
-								/>
-							</div>
+							<Gauge value={48} minValue={0} maxValue={300} />
 						</div>
 						<div className="foot-note">
 							Good. Air quality is satisfactory, and air pollution poses little
@@ -99,8 +74,8 @@ const Dashboard: FC = () => {
 						<List list={towns} />
 					</div>
 					<div className="tips">
-						<span className="underline">Health Tip</span>
-						<List list={tips.good} />
+						<span className="underline">Health Tips</span>
+						<List list={tips.hazardous} />
 					</div>
 				</div>
 			</div>
