@@ -69,12 +69,13 @@ const Dashboard: FC = () => {
 						<span className="underline">Today's AQI</span>
 						<Graph
 							type="line"
+							tickMaxStep={20}
 							series={[
 								{
 									label: "AQI",
 									data: [
-										10, 20, 24, 30, 23, 25, 30, 35, 34, 70, 67, 70, 63, 60, 60,
-										68, 70, 72, 77, 60, 55, 40, 30, 20,
+										30, 25, 20, 20, 35, 40, 50, 55, 70, 80, 90, 95, 100, 105,
+										110, 120, 150, 160, 170, 150, 130, 110, 90, 70,
 									],
 								},
 							]}
@@ -105,10 +106,6 @@ const Dashboard: FC = () => {
 								"23:00",
 							]}
 						/>
-					</div>
-					<div className="locations">
-						<span className="underline">Locations</span>
-						<List list={towns} />
 					</div>
 					<div className="tips">
 						<span className="underline">Health Tips</span>
